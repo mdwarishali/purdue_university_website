@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav > img{
+    width: 150px;
+}
+.nav-links{
+    flex-flow: 1;
+    text-align: right;
+}
+.nav-links > ul > li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links > ul > li >a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+.nav-links > ul > li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links > ul > li:hover::after{
+    width: 100%;
+}
+
+.sub-header{
+    height: 60vh;
+    width: 100%;
+    background-image:  linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(https://image.arrivalguides.com/x/17/56754fce8c1360bebd08fc1029825839.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1{
+    margin-top: 70px;
+}
+
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.about-col{
+    max-width: 41.66666%;
+    flex: 0 0 41.66666%;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    padding-top: 30px ;
+}
+.about-col2{
+    max-width: 48.66666%;
+    flex: 0 0 41.66666%;
+    position: relative;
+    width: 100%;
+    float: right;
+}
+.about-col2 >img{
+    width: 100%;
+}
+.about-col >h1{
+    padding-top: 0;
+}
+.about-col >p{
+    padding: 15px 0 25px;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+.red-btn{
+    border: 1px solid #f44336;
+    background: transparent;
+    color: #f44336;
+}
+.red-btn:hover{
+    color: #fff;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer >h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.footer >p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.icons >.fa-brands{
+    font-size: 20px;
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 38px 0;
+}
+.fa-regular{
+    color: #f44336;
+    padding-right: 5px;
+}
+
+@media(max-width:700px){
+    .nav-links > ul > li{
+        display: block;
+      }
+    .nav-links{
+        position: absolute;
+        background: rgb(43, 42, 42);
+        height: 60vh;
+        width: 100%;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+        z-index: 2;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+      } 
+      .about-col{
+        padding-left: 100px;
+        width: 100%;
+
+        
+      }
+      .about-col2{
+       padding-right: 117px;
+
+       margin-top: 30px;
+      }
+      .footer{
+        width: 100%;
+        margin-top: 80px;
+      }
+}
